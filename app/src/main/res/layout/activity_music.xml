@@ -1,0 +1,58 @@
+<!-- activity_music.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/jym2">
+
+    <!-- 音乐播放列表 -->
+    <ListView
+        android:id="@+id/musicListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_above="@+id/playerLayout" />
+
+    <!-- 音乐播放控制条 -->
+    <RelativeLayout
+        android:id="@+id/playerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#65FA88CC">
+
+        <ImageView
+            android:id="@+id/playerIcon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/musicicon2"
+            android:clickable="true"
+            android:onClick="togglePlayPause" />
+
+        <TextView
+            android:id="@+id/playerSongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/playerIcon"
+            android:layout_centerVertical="true"
+            android:textSize="16sp" />
+
+        <!-- activity_music.xml -->
+        <SeekBar
+            android:id="@+id/playerSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/playerIcon"
+            android:layout_below="@+id/playerSongName"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/jym2"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:text="单词翻译"
+        />
+
+    <EditText
+        android:id="@+id/et_word"
+        android:background="@mipmap/bar"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="15dp"
+        android:hint="请输入单词"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#BCF3B7E6"
+        android:layout_below="@id/et_word"
+        android:onClick="query"
+        android:text="翻译"
+        android:textStyle="bold"
+        android:textColor="#474747"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:background="@mipmap/bar"
+        android:padding="25dp"
+        android:id="@+id/tv_translation"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="30dp"
+        android:textColor="#818487"
+        android:text="单词对应翻译将会显示在该区域哦~\n\n\n目前仅支持''单词''翻译"
+        android:textSize="18dp"/>
+</RelativeLayout>

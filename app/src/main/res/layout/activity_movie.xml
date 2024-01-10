@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/jym3"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <!-- VideoView1 for movie1 -->
+        <VideoView
+            android:id="@+id/videoView1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            />
+
+        <!-- Button1 to Play movie1 -->
+        <Button
+            android:id="@+id/btnPlay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="看电影 学英语 1"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_margin="30dp"
+            android:backgroundTint="#FFEEFB"
+            android:textColor="#888787"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <!-- VideoView2 for movie2 -->
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center" />
+
+        <!-- Button2 to Play movie2 -->
+        <Button
+            android:id="@+id/btnPlay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="看电影 学英语 2"
+            android:layout_margin="30dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:backgroundTint="#FFEEFB"
+            android:textColor="#888787"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<!-- res/values/dialog_style.xml -->
+<resources>
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!-- Set button text color -->
+        <item name="android:buttonTint">@android:color/black</item>
+    </style>
+</resources>

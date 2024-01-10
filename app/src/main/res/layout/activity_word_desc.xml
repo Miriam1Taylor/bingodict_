@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/jym2"
+    tools:context=".WordDescActivity">
+    <LinearLayout
+        android:id="@+id/worddesc_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+     <TextView
+         android:id="@+id/worddesc_tv_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="hello"
+         android:textColor="#DF2B2A2A"
+         android:textStyle="bold"
+         android:layout_gravity="center"
+         android:textSize="50sp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:background="#79817E7E"
+    android:text="单词详解"
+    android:textColor="@color/white"
+    android:layout_marginTop="15dp"
+    android:textSize="25sp"
+    android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/worddesc_tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aaaaaaaaaaaaaaaa"
+        android:textColor="#424040"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_margin="20dp"/>
+    </LinearLayout>
+
+</ScrollView>
